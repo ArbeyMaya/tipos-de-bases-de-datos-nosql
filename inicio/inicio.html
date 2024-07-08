@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style-inicio.css">
+        <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+        <title>Inicio</title>
+    </head>
+    <body>
+       <div class="wrapper">
+          <aside id="sidebar">
+            <!-- Contenido sidebar -->
+             <div class="h-100">
+                <div class="sidebar-logo">
+                  <a href="#">SystemAdmin</a>
+                </div>
+                <ul class="sidebar-nav">
+                  <li class="sidebar-header">
+                    Admin
+                  </li>
+                  <li class="sidebar-item">
+                    <li class="sidebar-item">
+                      <a href="#" class="sidebar-link">
+                        <i class="bi bi-house pe-2"></i>
+                        Inicio
+                      </a>
+                    </li>
+                  </li>
+                  <li class="sidebar-item">
+                    <li class="sidebar-item">
+                      <a href="/bd-documentales/bd-documentales.html" class="sidebar-link">
+                        <i class="bi bi-database pe-2"></i>
+                        BD. Documentales
+                      </a>
+                    </li>
+                  </li>
+                </ul>
+             </div>
+          </aside>
+          <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+              <button class="btn" id="sidebar-toggle" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse navbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                      <img src="img-inicio/profile.jpg" class="avatar img-fluid rounded" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                      <a href="#" class="dropdown-item">Perfil</a>
+                      <a href="#" class="dropdown-item">Configuración</a>
+                      <a href="../index.html" class="dropdown-item">Salir</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <main class="content px-3 py-2">
+              <section class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="text-center">BASE DE DATOS NoSQL</h2>
+                    <h3 class="pt-3">¿Que son las bases de datos NoSQL?</h3>
+                    <p>Las bases de datos NoSQL son un tipo de base de datos no relacional que almacena datos de forma flexible y escalable. A diferencia de las bases de datos relacionales tradicionales, que utilizan un modelo de tablas y filas, las bases de datos NoSQL pueden almacenar datos en una variedad de formatos, incluyendo documentos, JSON, grafos y clave-valor.</p>
+                  </div>  
+                </div>
+              </section>
+              
+              <div class="row">
+                <div class="col-lg">
+                  <div class="card" style="width: 13rem;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center pb-3"><b>BD. Documentales</b></h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                      <p class="card-text">Almacenan datos en documentos JSON o BSON</p>
+                      <p class="card-text">Ejemplos: MongoDB, Cloud Firestore.</p>
+                      <a href="/bd-documentales/bd-documentales.html" class="card-link">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div class="card" style="width: 13rem;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center pb-3"><b>BD. Clave-Valor</b></h5>
+                      <p class="card-text">Almacenan datos en pares clave-valor.</p>
+                      <p class="card-text">Ejemplos: Redis.</p>
+                      <a href="#" class="card-link">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div class="card" style="width: 13rem;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center pb-3"><b>BD. Columnas</b></h5>
+                      <p class="card-text">permiten realizar consultas en grandes
+                        conjuntos de datos y almacenan los datos en columnas, en lugar de filas.</p>
+                      <p class="card-text">Ejemplos: Cassandra.</p>
+                      <a href="#" class="card-link">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div class="card" style="width: 13rem;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center pb-3"><b>BD. Grafos</b></h5>
+                      <p class="card-text">Almacenan datos en forma de grafos, donde los
+                        nodos representan entidades y las aristas representan relaciones entre ellas.</p>
+                      <p class="card-text">Ejemplos: Neo4j.</p>
+                      <a href="#" class="card-link">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </main>
+            <footer class="footer">
+              <div class="container-fluid">
+                <div class="row text-muted">
+                  <div class="col-6 text-start">
+                    <p class="mb-0">
+                      <a href="#" class="text-muted">
+                        <strong>SystemAdmin</strong>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-6 text-end">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="text-muted">Contacto</a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="text-muted">Acerca</a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="text-muted">Terms</a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="text-muted">Booking</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+       </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/inicio/script-inicio.js"></script>
+    </body>
+</html>
